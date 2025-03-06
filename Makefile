@@ -26,3 +26,4 @@ all:
 	$(RUN) texi2pdf /home/$(USER)/resume2025.tex -o /home/$(USER)/resume2025.pdf
 	scp $(REMOTE):/home/$(USER)/resume2025.pdf .
 	<index.html.template $(RUN) NOW=$(NOW) envsubst | tee index.html
+	cp -v resume2025.pdf ~/Downloads/
