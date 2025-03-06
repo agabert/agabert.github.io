@@ -17,13 +17,24 @@
 
 include include/remote.mk
 
-NOW = $(shell date +%s)
+CHECKSUM = $(shell shasum src/resume2025.tex)
 
 # from texinfo package, needs texlive package
-all:
-	sed 's,%%%LAST_UPDATED%%%,$(NOW),g;' resume2025.tex | \
-		ssh $(REMOTE) -- tee /home/$(USER)/resume2025.tex
-	$(RUN) texi2pdf /home/$(USER)/resume2025.tex -o /home/$(USER)/resume2025.pdf
-	scp $(REMOTE):/home/$(USER)/resume2025.pdf .
-	<index.html.template $(RUN) NOW=$(NOW) envsubst | tee index.html
-	cp -v resume2025.pdf ~/Downloads/
+all: download
+
+RESUME = resume2025
+
+TEX = $(RESUME).tex
+
+PDF = $(RESUME).pdf
+
+upload:
+	<"src/$(TEX)" ssh "$(REMOTE)" -- tee "/home/$(USER)/$(TEX)"
+
+generate: upload
+	$(RUN) texi2pdf "/home/$(USER)/$(TEX)" -o "/home/$(USER)/$(PDF)"
+
+download: generate
+	scp "$(REMOTE):/home/$(USER)/$(PDF)" "./$(PDF)"
+	cp -v "$(PDF)" "$(HOME)/Downloads/$(PDF)"
+
