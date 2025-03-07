@@ -1,4 +1,4 @@
 
-REMOTE = $(USER)@pi001
+REMOTE ?= $(USER)@pi001
 
 RUN = ssh "$(REMOTE)" --

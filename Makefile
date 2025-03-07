@@ -28,13 +28,16 @@ TEX = $(RESUME).tex
 
 PDF = $(RESUME).pdf
 
+SRC = /home/$(USER)/src
+
 upload:
-	<"src/$(TEX)" ssh "$(REMOTE)" -- tee "/home/$(USER)/$(TEX)"
+	ssh "$(REMOTE)" -- mkdir -pv "$(SRC)/."
+	rsync -HPavpx --delete-after src/. "$(REMOTE):$(SRC)/."
 
 generate: upload
-	$(RUN) texi2pdf "/home/$(USER)/$(TEX)" -o "/home/$(USER)/$(PDF)"
+	$(RUN) 'cd $(SRC) && texi2pdf --shell-escape $(TEX) -o $(PDF)'
 
 download: generate
-	scp "$(REMOTE):/home/$(USER)/$(PDF)" "./$(PDF)"
+	scp "$(REMOTE):$(SRC)/$(PDF)" "./$(PDF)"
 	cp -v "$(PDF)" "$(HOME)/Downloads/$(PDF)"
 

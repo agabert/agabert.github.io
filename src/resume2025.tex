@@ -7,6 +7,10 @@
 \usepackage{graphicx} % for latex and using .ps graphics
 \usepackage{rotating} % for big figures and tables
 
+% apt-get --no-install-recommends install texlive-latex-extra
+% apt install inkscape
+\usepackage{svg}
+
 \begin{document}
 
 \title{Curriculum Vitæ}
@@ -25,14 +29,17 @@
 \item[\textbf{Email}]
                 \url{mailto://opentowork2025@xoreaxeax.de}
 
+\item[\textbf{Current CV}]
+                \url{https://agabert.github.io/resume2025.pdf}
+
 \item[\textbf{English, German}]
-                native or bilingual proficiency
+                C2 (native or bilingual proficiency)
 
 \end{enumerate}
 
-\begin{flushleft}
-\section*{Certifications}
-\end{flushleft}
+\begin{center}
+\section*{\includesvg[width=0.2\textwidth]{microsoft-certified-expert-badge.svg}}
+\end{center}
 
 \begin{quote}
 \begin{enumerate}
@@ -58,16 +65,13 @@
 
 \begin{enumerate}
 
-\item[\textbf{containerization}]
-                    Azure Kubernetes Service with AKV CSI driver\\
-                    Azure Landing Zone Framework: Management Groups, Policies\\
+\item[\textbf{cloud platform engineering}]
+                    Azure Kubernetes Service, Azure RBAC\\
                     Private Endpoints, Hub\&Spoke, Private DNS\\
-                    User-Assigned Managed Identities, Azure RBAC\\
                     Azure Recovery Services Vault with SAP HANA on Azure
 
 \item[\textbf{data engineering}]
-                    Mysql, Postgresql\\
-                    Kafka, Azure Event Hub, DataBricks, Azure HDInsight\\
+                    Kafka, DataBricks, Azure HDInsight\\
                     Zookeeper, Cassandra\\
                     Microsoft SQL Server ETL with Common Table Expressions
 
@@ -83,21 +87,16 @@
 
 \item[\textbf{Python3}]
                     AzureRM Python SDK\\
-                    Code generation for ARM templates, azure-cli commands\\
-                    and k8s yaml files for application deployments and AKV secrets
+                    Code generation for ARM templates and k8s yaml
 
 \item[\textbf{Bash}]
-                    Scripting for PoC environments using azure-cli
+                    Setup of PoC environments using azure-cli commands only
 
 \item[\textbf{GNU Make}]
-                    locally testable CI/CD pipelines with concourse-ci
+                    CI/CD pipelines for concourse-ci
 
 \item[\textbf{Terraform}]
-                    Terraform Enterprise Workspaces\\
-                    Terraform AzureRM Provider, TF Kubernetes Provider
-
-\item[\textbf{Editor}]
-                    \url{https://agabert.github.io/vimrc.txt}
+                    Terraform Enterprise: AzureRM Provider, Kubernetes Provider
 
 \end{enumerate}
 
@@ -115,9 +114,6 @@
 
 \item[1997 - 1999]  CASO Consulting, Hallbergmoos, Bavaria, DE\\
                     Fachinformatiker Systemintegration
-
-\item[1996]         Gymnasium Dorfen, Bavaria, DE\\
-                    Allgemeine Hochschulreife
 
 \end{enumerate}
 \end{quote}
@@ -174,7 +170,7 @@
                     Puppet, Zabbix, Nagios Monitoring\\
                     Scripting of monitoring plugins (JSON, JMX, XPATH)\\
                     Hadoop Cluster Operations\\
-                    \textbf{Business Intelligence Development}\\
+                    \textbf{Business Intelligence}\\
                     MicroStrategy 8.1.2 ROLAP, Pentaho Data Integration\\
                     Microsoft SQL Server 2008 SSIS SSAS SSRS\\
                     Integration Services, Analysis Services, Reporting Services\\
@@ -184,7 +180,7 @@
 \clearpage
 
 \item[2008]         Active Mining AG, Augsburg, DE\\
-                    \textbf{Business Intelligence Development}\\
+                    \textbf{Business Intelligence}\\
                     Development of internet-based Monte-Carlo-Simulation-as-a-service SaaS platform to calculate the success of business plans for german companies\\
                     Project management for off-shore development team\\
                     C\#, ASP.NET, Microsoft SQL Server 2005/2008\\
@@ -194,7 +190,7 @@
 \item[ ]
 
 \item[2007 - 2008]  Berlitz, Frankfurt/Main, DE\\
-                    \textbf{IT Engineering, Project Management}\\
+                    \textbf{IT Administration, Project Management}\\
                     Network migration 60+ sites, 600+ users\\
                     Network engineering, routing and configuration\\
                     Hot-standby firewalls (pfsense/FreeBSD)\\
@@ -240,8 +236,6 @@
 
 \item[1999 - 2004]  Electronic Data Systems, Munich, DE\\
                     \textbf{IT Engineering, IT Operations}\\
-                    \textbf{Customer Service, Project Management}\\
-                    \textbf{Rollout Management, Technical Consulting}\\
                     IBM xSeries Servers\\
                     DEC StorageWorks SCSI based Enclosures\\
                     Fibre Channel SAN Switches from Brocade\\
@@ -256,13 +250,13 @@
 
 \item[ ]
 
-\item[1999 - 2003]  Gentoo Linux\\
-                    \textbf{Kernel Development}\\
+\item[1999 - 2003]  Gentoo Linux, Oregon State University, USA\\
+                    \textbf{Linux kernel}\\
                     Integration of PaX and grsecurity patches in kernel packages\\
-                    \textbf{Compiler Development}\\
+                    \textbf{gcc}\\
                     Integration of IBM SSP and Redhat buffer overflow protection patches in gcc package\\
                     Development of next-generation return address protection SSPX\\
-                    \textbf{Toolchain Development}\\
+                    \textbf{binutils}\\
                     Porting of kernel hardening and compiler hardening patches to RISC architectures\\
                     Development of Gentoo ebuilds and patches\\
                     Documentation and guides for ELF, PIE and PIC code
