@@ -35,6 +35,7 @@ upload:
 	rsync -HPavpx --delete-after src/. "$(REMOTE):$(SRC)/."
 
 generate: upload
+	$(RUN) 'dpkg -l' | tee dpkg_l.txt
 	$(RUN) 'cd $(SRC) && texi2pdf --shell-escape $(TEX) -o $(PDF)'
 
 download: generate
