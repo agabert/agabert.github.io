@@ -64,7 +64,7 @@ ii  dbus-daemon                          1.14.10-1~deb12u1                      
 ii  dbus-session-bus-common              1.14.10-1~deb12u1                       all          simple interprocess messaging system (session bus configuration)
 ii  dbus-system-bus-common               1.14.10-1~deb12u1                       all          simple interprocess messaging system (system bus configuration)
 ii  dbus-user-session                    1.14.10-1~deb12u1                       arm64        simple interprocess messaging system (systemd --user integration)
-ii  dc                                   1.07.1-3                                arm64        GNU dc arbitrary precision reverse-polish calculator
+rc  dc                                   1.07.1-3                                arm64        GNU dc arbitrary precision reverse-polish calculator
 ii  dconf-cli                            0.40.0-4                                arm64        simple configuration storage system - utilities
 ii  dconf-gsettings-backend:arm64        0.40.0-4                                arm64        simple configuration storage system - GSettings back-end
 ii  dconf-service                        0.40.0-4                                arm64        simple configuration storage system - D-Bus service
@@ -830,9 +830,7 @@ ii  libzpool5linux                       2.2.3-1~bpo12+1~rpt1                   
 ii  libzstd1:arm64                       1.5.4+dfsg2-5                           arm64        fast lossless compression algorithm
 ii  libzzip-0-13:arm64                   0.13.72+dfsg.1-1.1                      arm64        library providing read access on ZIP-archives - library
 ii  linux-base                           4.9                                     all          Linux image base package
-ii  linux-headers-6.1.0-31-arm64         6.1.128-1                               arm64        Header files for Linux 6.1.0-31-arm64
-ii  linux-headers-6.1.0-31-common        6.1.128-1                               all          Common header files for Linux 6.1.0-31
-iF  linux-headers-6.1.0-32-arm64         6.1.129-1                               arm64        Header files for Linux 6.1.0-32-arm64
+ii  linux-headers-6.1.0-32-arm64         6.1.129-1                               arm64        Header files for Linux 6.1.0-32-arm64
 ii  linux-headers-6.1.0-32-common        6.1.129-1                               all          Common header files for Linux 6.1.0-32
 ii  linux-headers-6.6.62+rpt-common-rpi  1:6.6.62-1+rpt1                         all          Common header files for Linux 6.6.62+rpt-rpi
 ii  linux-headers-6.6.62+rpt-rpi-2712    1:6.6.62-1+rpt1                         arm64        Header files for Linux 6.6.62+rpt-rpi-2712
@@ -840,7 +838,7 @@ ii  linux-headers-6.6.62+rpt-rpi-v8      1:6.6.62-1+rpt1                        
 ii  linux-headers-6.6.74+rpt-common-rpi  1:6.6.74-1+rpt1                         all          Common header files for Linux 6.6.74+rpt-rpi
 ii  linux-headers-6.6.74+rpt-rpi-2712    1:6.6.74-1+rpt1                         arm64        Header files for Linux 6.6.74+rpt-rpi-2712
 ii  linux-headers-6.6.74+rpt-rpi-v8      1:6.6.74-1+rpt1                         arm64        Header files for Linux 6.6.74+rpt-rpi-v8
-iU  linux-headers-arm64                  6.1.129-1                               arm64        Header files for Linux arm64 configuration (meta-package)
+ii  linux-headers-arm64                  6.1.129-1                               arm64        Header files for Linux arm64 configuration (meta-package)
 ii  linux-headers-rpi-2712               1:6.6.74-1+rpt1                         arm64        Header files for Linux rpi-2712 configuration (meta-package)
 ii  linux-headers-rpi-v8                 1:6.6.74-1+rpt1                         arm64        Header files for Linux rpi-v8 configuration (meta-package)
 rc  linux-image-6.1.0-rpi7-rpi-2712      1:6.1.63-1+rpt1                         arm64        Linux 6.1 for Raspberry Pi 2712, Raspberry Pi
