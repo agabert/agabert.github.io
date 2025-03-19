@@ -38,7 +38,10 @@ generate: upload
 	$(RUN) 'dpkg -l' | tee dpkg_l.txt
 	$(RUN) 'cd $(SRC) && texi2pdf --shell-escape $(TEX) -o $(PDF)'
 
+PDF_DATE_STAMPED = alexander_gabert_resume_$(shell date +%Y-%m-%d).pdf
+
 download: generate
 	scp "$(REMOTE):$(SRC)/$(PDF)" "./$(PDF)"
-	cp -v "$(PDF)" "$(HOME)/Downloads/$(PDF)"
+	rm -vf "$(HOME)/Documents/alexander_gabert_resume_"*
+	cp -v "$(PDF)" "$(HOME)/Documents/$(PDF_DATE_STAMPED)"
 

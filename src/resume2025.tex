@@ -4,6 +4,8 @@
 \usepackage[utf8]{inputenc} % for german names
 
 \usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=[RGB]{0,0,177}}
+
 \usepackage{graphicx} % for latex and using .ps graphics
 \usepackage{rotating} % for big figures and tables
 
@@ -13,8 +15,8 @@
 
 \begin{document}
 
-\title{ Resume \\ \textsl{\&} \\ Curriculum Vitae }
-\author{Alexander Gabert\\D-87734 Benningen}
+\title{Resume \\ \textsl{\&} \\ Curriculum Vitae}
+\author{Alexander Gabert \\ D-87734 Benningen}
 \maketitle
 
 \begin{flushleft}
@@ -24,10 +26,12 @@
 \begin{enumerate}
 
 \item[\textbf{Email}]
-                \url{mailto://opentowork2025@xoreaxeax.de}
+                \href{mailto://opentowork2025@xoreaxeax.de}
+                {opentowork2025@xoreaxeax.de}
 
 \item[\textbf{Current CV}]
-                \url{https://agabert.github.io/resume2025.pdf}
+                \href{https://agabert.github.io/resume2025.pdf}
+                {agabert.github.io/resume2025.pdf}
 
 \end{enumerate}
 
@@ -35,20 +39,20 @@
 \subsection*{Certifications}
 \end{flushleft}
 
+\begin{quote}
+\begin{enumerate}
+
+\item[AZ-305]
+                    \href{https://learn.microsoft.com/en-us/users/alexandergabertaz104-2320/credentials/8593ddd9c32f58a5}
+                    {\textbf{Azure Solutions Architect Expert}}
+
 \begin{flushleft}
 \includesvg[width=0.2\textwidth]{microsoft-certified-expert-badge.svg}
 \end{flushleft}
 
-\begin{quote}
-\begin{enumerate}
-
-\item[\textbf{AZ-305}]
-                    Azure Solutions Architect Expert\\
-                    \url{https://learn.microsoft.com/en-us/users/alexandergabertaz104-2320/credentials/8593ddd9c32f58a5}
-
-\item[\textbf{AZ-104}]
-                    Azure Administrator Associate\\
-                    \url{https://learn.microsoft.com/en-us/users/alexandergabertaz104-2320/credentials/27b9683078c190ac}
+\item[AZ-104]
+                    \href{https://learn.microsoft.com/en-us/users/alexandergabertaz104-2320/credentials/27b9683078c190ac}
+                    {Azure Administrator Associate}
 
 \end{enumerate}
 \end{quote}
@@ -59,15 +63,15 @@
 
 \begin{enumerate}
 
-\item[\textbf{Cloud platform engineering}]
-                    Azure Kubernetes Service, Azure RBAC\\
+\item[Cloud Platform Engineering]
+                    \textbf{Azure Kubernetes Service}, Azure RBAC\\
                     Private Endpoints, Hub\&Spoke, Private DNS\\
-                    Azure Recovery Services Vault with SAP HANA on Azure
+                    Azure Recovery Services Vault with SAP HANA
 
-\item[\textbf{Data engineering}]
-                    Kafka, DataBricks, Azure HDInsight\\
-                    Zookeeper, Cassandra\\
-                    Microsoft SQL Server ETL with Common Table Expressions
+\item[Data Integration]
+                    Azure Data Factory, DataBricks, Azure HDInsight\\
+                    Kafka, Zookeeper, Cassandra\\
+                    Microsoft SQL Server \textbf{ETL} with Common Table Expressions
 
 \end{enumerate}
 
@@ -79,18 +83,21 @@
 
 \begin{enumerate}
 
-\item[\textbf{Python3}]
-                    AzureRM Python SDK\\
-                    Code generation for ARM templates and k8s yaml
+\item[Python3]
+                    Using AzureRM Python SDK to deploy complex environments\\
+                    Writing \textbf{code generators} for kubernetes resources:\\
+                    ingress, k8s secrets, configmaps, deployments
 
-\item[\textbf{Bash}]
-                    Setup of PoC environments using azure-cli commands only
+\item[Bash]
+                    Developing shell scripts for generating azure-cli commands\\
+                    to build \textbf{minimum viable product} cloud deployments
 
 \item[\textbf{GNU Makefiles}]
-                    Vendor-agnostic CI/CD pipelines for Infrastructure-as-code
+                    Vendor-agnostic, locally runnable CI/CD pipeline design
 
-\item[\textbf{Terraform}]
-                    Terraform Enterprise with AzureRM Provider and TF Kubernetes Provider
+\item[Terraform]
+                    Terraform Enterprise:\\
+                    TF AzureRM Provider, TF Kubernetes Provider
 
 \end{enumerate}
 
@@ -103,8 +110,8 @@
 \begin{quote}
 \begin{enumerate}
 
-\item[\textbf{English, German}]
-                C2 (native or bilingual proficiency)
+\item[English, German]
+                    \textbf{C2} (native or bilingual proficiency)
 
 \item[2004 - 2007]  Fachhochschule Trier, DE\\
                     Applied Computer Science
@@ -128,21 +135,28 @@
                     NTT DATA Deutschland SE, Munich, DE\\
                     \textbf{Managing Technical Consultant}\\
                     Azure PaaS layer projects in german public sector and financial institutions\\
-                    Planning and implementation of AKS environments for running european central bank workloads\\
-                    Prototype of Azure based solution for moving kafka-based payment processing software from on-premise to cloud\\
-                    Migration of existing data center environments like SAP-BW and container workloads to Azure application landing zones
+                    Planning and implementation of \textbf{AKS} environments\\
+                    for running european central bank workloads\\
+                    Prototype of Azure based solution for moving kafka-based\\
+                    payment processing software from on-premise to the Azure cloud\\
+                    Migration of existing data center environments like SAP-BW\\
+                    and container workloads to Azure application landing zones
 
 \item[ ]
 
 \item[2017 - 2023]
                     Inovex GmbH, Pforzheim, DE\\
                     \textbf{Cloud Platform Architect}\\
-                    Planning, designing and building data science platforms on public clouds and private data centers\\
+                    Planning, designing and building data science platforms on public and private clouds\\
                     Migration of on-premise b2b bank risk management models to Azure HDInsight\\
-                    Cloud architecture and rollout of world-wide factory sensor data analytics solution, deployment via custom Azure Python SDK based framework developed in-house\\
-                    Design and implementation of analytics platform for running data science projects on the point-of-sale data of all EU Kaufland and Lidl stores\\
-                    Kubernetes operator development for the largest german OpenStack cloud STACKIT 400+ hypervisors\\
-                    Setup of CI/CD platform based on concourse-ci for STACKIT Kubernetes Engine\\
+                    Cloud architecture and rollout of world-wide factory sensor data analytics solution\\
+                    Deployment via custom Azure Python SDK based framework developed in-house\\
+                    Design and implementation of analytics platform for running data science projects\\
+                    on the point-of-sale data of all EU Kaufland and \textbf{Lidl} stores\\
+                    Kubernetes operator development for the largest german\\
+                    \textbf{OpenStack} cloud STACKIT\\
+                    Setup of CI/CD platform based on concourse-ci for\\
+                    STACKIT Kubernetes Engine\\
                     IT operations for Linux virtual machines in data centers of KRITIS energy sector companies
 
 \item[ ]
@@ -151,7 +165,7 @@
                     Midokura, San Francisco, USA\\
                     \textbf{Sales Engineer}\\
                     Building proof-of-concept installations and winning customers for MidoNet overlay network virtualization\\
-                    Creating value propositions around best-in-market VLAN, VXLAN, VTEP and Tap-as-a-Service features\\
+                    Creating value propositions around best-in-market VLAN, VXLAN, \textbf{VTEP} and Tap-as-a-Service features\\
                     Working with Brocade, BigSwitch and Cumulus Linux based 10/50/100Gbit switches\\
                     Fully distributed layer 4 loadbalancing at the edge\\
                     Developing Python3 framework for deployments of OpenStack Services inside Kubernetes undercloud\\
@@ -181,9 +195,11 @@
 
 \item[2008]         Active Mining AG, Augsburg, DE\\
                     \textbf{Business Intelligence}\\
-                    Development of internet-based Monte-Carlo-Simulation-as-a-service SaaS platform to calculate the success of business plans for german companies\\
+                    Development of internet-based Monte-Carlo-Simulation-as-a-service\\
+                    SaaS platform to forecast the viability\\
+                    of business plans for german companies\\
                     Project management for off-shore development team\\
-                    C\#, ASP.NET, Microsoft SQL Server 2005/2008\\
+                    \textbf{C\#}, ASP.NET, Microsoft SQL Server 2005/2008\\
                     Microsoft Reporting Services 2005\\
                     ADO.NET, AJAX, JavaScript
 
@@ -204,7 +220,7 @@
                     Blackberry Enterprise Services\\
                     Group policy objects and active directory OU\\
                     Mail policies, distribution lists\\
-                    Automatic user migration scripts, mail forwarding
+                    Automatic user migration \textbf{scripts}, mail forwarding
 
 \clearpage
 
@@ -215,37 +231,38 @@
 \item[2007]         KREIOS S.a.r.L, Luxembourg, LU\\
                     \textbf{Software Development}\\
                     C\#, openArchitectureWare\\
+                    Model driven software development with \textbf{partial classes}\\
                     Integration of multi- tier .NET design patterns\\
-                    or PostGIS, .NET Topology Suite\\
+                    PostGIS, .NET Topology Suite\\
                     Expression Blend, WPF, code-behind\\
                     Business and persistence layer\\
                     CSLA.Net business objects\\
-                    Test driven development, unit tests
+                    Test driven development, unit tests\\
 
 \item[ ]
 
 \item[2004 - 2006]  r/ft Fachhochschule Trier, DE\\
                     \textbf{Software Development}\\
                     Development of in-house Student Information System\\
-                    ETL scripts with Perl and Shell scripting\\
+                    \textbf{ETL} scripts with Perl and Shell scripting\\
                     Database exports, Xml- based, File- based Sources\\
                     JBoss application development with persistence beans\\
                     SAX Parsers and XML Perl Modules on IBM AIX\\
-                    NIS authentication module for TYPO3
+                    NIS/yp authentication module for TYPO3
 
 \item[ ]
 
 \item[1999 - 2004]  Electronic Data Systems, Munich, DE\\
                     \textbf{IT Engineering, IT Operations}\\
                     IBM xSeries Servers\\
-                    DEC StorageWorks SCSI based Enclosures\\
-                    Fibre Channel SAN Switches from Brocade\\
+                    \textbf{DEC} StorageWorks\\
+                    Fibre Channel SAN Switches\\
                     Win2000 Active Directory Domain Controllers\\
                     Network migrations from IPX/SPX to TCP/IP\\
                     Cluster-, Fileserver-, Domain migrations\\
                     Lotus Notes Migrations from 4.x to 5.x\\
                     Thuringia/Generali, DBV-Winterthur,\\
-                    DEVK, Sony, Deutsche Bundesbank, Linde AG\\
+                    DEVK, Sony, Landeszentralbank Bayern, Linde AG\\
                     Bayrische Rueckversicherung, Hoechst\\
                     AT Kearney (ATK), LV1871
 
@@ -253,14 +270,14 @@
 
 \item[1999]         CASO Consulting, Hallbergmoos, DE\\
                     \textbf{IT administration, Network administration}\\
-                    Installation and maintenance of SAP R/3 on Windows NT4.0\\
+                    Installation and maintenance of \textbf{SAP R/3} on Windows NT4.0\\
                     Oracle database configuration and maintenance\\
                     Siemens RM/400 Sinix\\
                     ABAP/4 report programming\\
                     Deployment of ipfwadm, ipmasqadm based Linux firewalls\\
                     Administration of Ascend and Cisco network equipment\\
-                    Development of in-house accounting for ISP customer traffic using
-                    binary C structs of NeTraMet traffic logs written to disk
+                    Development of in-house accounting for ISP customer traffic\\
+                    using binary C structs of NeTraMet traffic logs
 
 \clearpage
 
@@ -268,20 +285,29 @@
 \section*{Open Source Contributions}
 \end{flushleft}
 
-\item[2022]         Yaook OpenStack project\\
-                    \textbf{Software Development}\\
-                    Development of Python3 code and CRDs for k8s operators to provide Neutron, OVS, OVN and ovsdb-server as containerized workload
+\item[2022]         \href{https://yaook.cloud}{YaooK} OpenStack project\\
+                    \textbf{Platform Engineering}\\
+                    Development of Python3 code and CRDs for k8s operators\\
+                    to provide Neutron, OVS, OVN and ovsdb-server\\
+                    as containerized workload
 
-\item[2021]         SAP Gardener\\
-                    \textbf{Software Development}\\
-                    Bugfixes for upstream POSIX shell scripts to deploy gardener on kubernetes
+\item[]
 
-\item[1999 - 2003]  Gentoo Linux, Oregon State University, USA\\
+\item[2021]         SAP \href{https://gardener.cloud}{Gardener}\\
+                    \textbf{DevOps Engineering}\\
+                    Bugfixes for upstream POSIX shell scripts\\
+                    to deploy gardener on kubernetes
+
+\item[]
+
+\item[1999 - 2003]  \href{https://gentoo.org}{Gentoo Linux}\\
                     \textbf{Linux kernel}, \textbf{gcc}, \textbf{binutils}\\
                     Integration of PaX and grsecurity patches in kernel packages\\
-                    Integration of IBM SSP and Redhat buffer overflow protection patches in gcc package\\
+                    Integration of IBM SSP and Redhat buffer overflow\\
+                    protection patches in gcc package\\
                     Development of next-generation return address protection\\
-                    Porting of kernel hardening and compiler hardening patches to RISC architectures\\
+                    Porting of kernel hardening and compiler hardening\\
+                    patches to RISC architectures\\
                     Development of Gentoo ebuilds and patches\\
                     Documentation and guides for ELF, PIE and PIC code
 

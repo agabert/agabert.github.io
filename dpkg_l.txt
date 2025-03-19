@@ -360,7 +360,7 @@ ii  libfont-afm-perl                     1.20-4                                 
 ii  libfontbox-java                      1:1.8.16-2                              all          Java font library
 ii  libfontconfig1:arm64                 2.14.1-4                                arm64        generic font configuration library - runtime
 ii  libfontenc1:arm64                    1:1.1.4-1                               arm64        X11 font encoding library
-ii  libfreetype6:arm64                   2.12.1+dfsg-5+deb12u3                   arm64        FreeType 2 font engine, shared library files
+ii  libfreetype6:arm64                   2.12.1+dfsg-5+deb12u4                   arm64        FreeType 2 font engine, shared library files
 ii  libfribidi0:arm64                    1.0.8-2.1                               arm64        Free Implementation of the Unicode BiDi algorithm
 ii  libfstrm0:arm64                      0.6.1-1                                 arm64        Frame Streams (fstrm) library
 ii  libftdi1-2:arm64                     1.5-6+b2                                arm64        C Library to control and program the FTDI USB controllers
